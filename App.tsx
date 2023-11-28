@@ -7,6 +7,7 @@ import theme from './src/theme'
 import { NewGroup } from "@screens/NewGroup";
 import { Header } from '@components/header';
 import { Players } from '@screens/Players';
+import { Groups } from '@screens/Groups';
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
