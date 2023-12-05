@@ -4,11 +4,6 @@ import { useFonts, Roboto_400Regular,Roboto_700Bold } from '@expo-google-fonts/r
 import { Loading } from '@components/loading';
 import theme from './src/theme'
 
-import { NewGroup } from "@screens/NewGroup";
-import { Header } from '@components/header';
-import { Players } from '@screens/Players';
-import { Groups } from '@screens/Groups';
-
 import  { Routes } from './src/routes';
 
 export default function App() {

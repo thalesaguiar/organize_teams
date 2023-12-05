@@ -23,6 +23,11 @@ export function AppRoutes( ) {
         name="players"
         component={Players}
       />
+
     </Navigator>
+
+
+
+
   )
 }
