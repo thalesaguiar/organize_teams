@@ -1,11 +1,10 @@
 import { Header } from "@components/header";
 import { FlatList } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
 
-import { groupsGetAll }
-
+import { groupsGetAll } from "../../storage/group/goupsGetAll";
 import { Container } from "./styles";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Highlight } from "@components/Highlight";
 import { GroupCard } from "@components/GroupCard";
 import { ListEmpty } from "@components/ListEmpty";
@@ -28,6 +27,13 @@ export function Groups() {
       console.log(error);
     }
   }
+
+  useFocusEffect(
+    useCallback(() => {
+      console.log("useFocusEffectExecutou");
+      fetchGroups(); //oque deve ser executado
+    }, [])
+  );
 
   return (
     <Container>
